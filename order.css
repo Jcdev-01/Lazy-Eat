@@ -1,0 +1,185 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+    font-family: 'PT Serif', serif;
+}
+.navbar-nav{
+  font-size: 18px;
+  font-weight: 500;
+}
+.nav-item{
+  margin-left: 60px;
+}
+.reg{
+  margin-right: 120px;
+  background-color: #1D267D;
+  position: relative;
+  width: 20%;
+}
+.reg:hover{
+  background-color: #3c486b;
+}
+.drp{
+  position: absolute;
+  margin-left: 325px;
+}
+.fa-sharp{
+  position: realtive;
+  margin-right: 50px;
+}
+.drp a:hover{
+  background-color: #EF9A53;
+}
+.heading{
+  font-weight: 900;
+}
+.start{
+  background-color: #F5FBFF;
+}
+.start h1{
+  font-size: 45px;
+  margin-top: 30px;
+  font-family: 'Alfa Slab One', cursive;
+}
+#para{
+  margin-top: 50px;
+  font-size: 20px;
+  font-weight: 100;
+}
+.srch{
+  padding: 25px;
+}
+.srch input{
+  width: 100%;
+  border: none;
+  z-index: 20;
+}
+svg{
+  position: absolute;
+  top: 350px;
+  z-index: 10;
+}
+.location{
+  margin-left: 50px;
+}
+#second-container{
+  margin-top: 140px;
+}
+.heading-2{
+  margin-top: 40px;
+  font-family: 'Russo One', sans-serif;
+}
+.heading-3{
+  font-family:'Russo One', sans-serif;
+}
+#para-2{
+  font-weight: lighter;
+}
+.radius-button{
+  border-radius: 50px;
+  width: 30%;
+}
+.img-margin{
+  margin-top: 20px;
+}
+#cart-container{
+  text-align: center;
+  margin-top: 130px;
+  padding: 50px;
+  background: linear-gradient(90deg, rgba(180,177,58,1) 0%, rgba(252,144,34,1) 68%, rgba(252,176,69,1) 92%);
+}
+#cart-container h1{
+  font-family:'Russo One', sans-serif;
+}
+.card{
+  border: 1px solid black;
+  margin-top: 15px;
+}
+#button-cart{
+  margin-top: 70px;
+}
+
+.navbar-toggler {
+  border: 0 !important;
+}
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border: 0 !important;
+}
+
+.toggler-icon{
+  width: 30px;
+  height: 3px;
+  background-color: #777777;
+  display: block;
+  transition: all 0.2s;
+}
+
+.middle-bar{
+  margin: 5px auto;
+}
+
+.navbar-toggler .top-bar {
+  transform: rotate(45deg);
+  transform-origin: 10% 10%;
+}
+
+.navbar-toggler .middle-bar {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+.navbar-toggler .bottom-bar {
+  transform: rotate(-45deg);
+  transform-origin: 10% 90%;
+}
+
+.navbar-toggler.collapsed .top-bar {
+  transform: rotate(0);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+  transform: rotate(0);
+}
+
+.navbar-toggler.collapsed .toggler-icon {
+  background-color: #777777;
+}
+.py-5{
+  text-align: center;
+}
+.col-5{
+  margin-top: 30px;
+}
+.btn-contact{
+  background-color: orange;
+  border: none;
+}
+.btn-contact:hover{
+   background-color: #EF9A53;
+}
+.inpt{
+  border: 1px solid black;
+}
+.inpt:focus{
+  outline: 1px solid gray !important;
+  box-shadow: none !important;
+  border: 0 !important;
+}
+.btn-cls:focus{
+  outline: none !important;
+  box-shadow: none !important;
+  border: 0 !important;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="order.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>LazyEat</title>
+</head>
+   <body>
+    <div id="header" data-aos="fade-up">
+        <nav class="navbar navbar-expand-lg bg-light ">
+            <div class="container-fluid">
+              <a class="navbar-brand">
+                <img src="images/crop.jpg" class="img-thumbnail" alt="bcp" height="120px" width="120px" style="border: none;"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="toggler-icon top-bar"></span>
+                <span class="toggler-icon middle-bar"></span>
+                <span class="toggler-icon bottom-bar"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav mb-2 mb-lg-0 text-center">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#cart-container">OurProduct</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact us</a>
+                  </li>
+                </ul>
+                <button class="reg btn btn-secondary  ms-auto" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                   Categories
+                </button>
+                <ul class="drp dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="index.html">Pizza</a></li>
+                  <li><a class="dropdown-item" href="coffee.html">Coffee</a></li>
+                  <li><a class="dropdown-item" href="milktea.html">Milktea</a></li>
+                  <li><a class="dropdown-item" href="burger.html">Burger</a></li>
+                  <li><a class="dropdown-item" href="fries.html">Fries</a></li>
+                  <li><a class="dropdown-item" href="somai.html">Somai</a></li>
+                  <li><a class="dropdown-item" href="nachos.html">Nachos</a></li>
+                  <li><a class="dropdown-item" href="friedchicken.html">FriedChicken</a></li>
+                  <li><a class="dropdown-item" href="#">BeefSteak</a></li>
+                  <li><a class="dropdown-item" href="porkchop.html">PorkChop</a></li>
+                </ul>
+                <i class="fa-sharp fa-solid fa-pizza-slice fa-2xl"></i>
+              </div>
+            </div>
+          </nav>
+       <!--cart content-->
+       <div id="cart-container">
+         <h1>BeefSteak</h1>
+         <div class="liveAlertPlaceholder"></div>
+         <div class="row row-cols-1 row-cols-md-3 g-4">
+           <div class="col" data-aos="zoom-in-down">
+             <div class="card h-100 shadow-lg p-3 mb-5 bg-body rounded">
+               <img src="images/beefsteak1.png" class="card-img-top" alt="pizza1" height="240px" width="240px">
+               <div class="card-body">
+                 <h5 class="card-title">BeefSteak With Corn</h5>
+                 <p class="card-text">₱450</p>
+                 <button type="button" class="btn btn-warning adt-4" style="color: white;" onclick="btn25()" id="liveAlertBtn">Add to cart</button>
+               </div>
+               <div class="card-footer">
+                 <small class="text-muted">Last updated 7 mins ago</small>
+               </div>
+             </div>
+           </div>
+           <div class="col" data-aos="zoom-in-down">
+             <div class="card h-100 shadow-lg p-3 mb-5 bg-body rounded">
+               <img src="images/regular.png" class="card-img-top" alt="pizza" height="240px" width="240px">
+               <div class="card-body">
+                 <h5 class="card-title">Regular BeefSteak</h5>
+                 <p class="card-text">price: ₱200</p>
+                 <button type="button" class="btn btn-warning adt-8" style="color: white;" onclick="btn26()" id="newAlertBtn">Add to cart</button>
+               </div>
+               <div class="card-footer">
+                 <small class="text-muted">Last updated 3 mins ago</small>
+               </div>
+             </div>
+           </div>
+           <div class="col" data-aos="zoom-in-down">
+             <div class="card h-100 shadow-lg p-3 mb-5 bg-body rounded">
+               <img src="images/big.png" class="card-img-top" alt="..." height="240px" width="240px">
+               <div class="card-body">
+                 <h5 class="card-title">BigSize BeefSteak</h5>
+                 <p class="card-text">price: ₱500</p>
+                 <button type="button" class="btn btn-warning adt-5" style="color: white;" onclick="btn27()" id="thirdAlertBtn">Add to cart</button>
+               </div>
+               <div class="card-footer">
+                 <small class="text-muted">Last updated 15 mins ago</small>
+               </div>
+             </div>
+           </div>
+         </div>
+     <div id="button-cart">
+         <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cart">cart
+       (<span class="total-count"></span>)</button><button class="clear-cart btn btn-danger">Clear Cart</button>
+     </div>
+     <!-- Modal -->
+     <div class="modal fade" id="cart" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+       <div class="modal-dialog">
+         <div class="modal-content">
+           <div class="modal-header">
+             <h1 class="modal-title fs-5" id="exampleModalLabel">Cart</h1>
+             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="box-shadow: none;"></button>
+           </div>
+           <div class="modal-body">
+             <div class="image-item"><p></p></div>
+             <h3 class="show-cart table">
+               
+             </h3>
+             <div>Total price: ₱<span class="total-cart"></span></div>
+           </div>
+           <div class="modal-footer">
+             <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Close</button>
+             <button type="button" class="btn btn-primary">order now</button>
+           </div>
+         </div>
+       </div>
+     </div>
+       </div>
+       <!-- footer -->
+       <div class="container">
+         <footer class="py-5">
+           <div class="row">
+             <div class="col-5 col-md-2 mb-3">
+               <h5>Contact Ryza</h5>
+               <ul class="nav flex-colum">
+                 <li class="nav-item mb-2">
+                   <a href="https://www.facebook.com/Ryza.Galang" clss="nav-link p-0 text-muted" target="blank_"><i class="fa-brands fa-square-facebook fa-2xl" style="color: #000000;"></i></a>
+                 </li>
+         
+                 <li class="nav-item mb-2">
+                   <a href="https://www.instagram.com/athasiagalang/" clss="nav-link p-0 text-muted" target="blank_"><i class="fa-brands fa-square-instagram fa-2xl" style="color: #000000;"></i></a>
+                 </li>
+     
+                 <li class="nav-item mb-2">
+                   <a href="https://twitter.com/Itsurgirlshaxxx" clss="nav-link p-0 text-muted" target="blank_"><i class="fa-brands fa-twitter fa-2xl" style="color: #000000;"></i></a>
+                 </li>
+               </ul>
+             </div>
+     
+             <div class="col-5 col-md-2 mb-3">
+               <h5>Contact Roselyn</h5>
+               <ul class="nav flex-colum">
+                 <li class="nav-item mb-2">
+                   <a href="https://www.facebook.com/roselyn.maristela.31" clss="nav-link p-0 text-muted" target="blank_"><i class="fa-brands fa-square-facebook fa-2xl" style="color: #000000;"></i></a>
+                 </li>
+     
+                 <li class="nav-item mb-2">
+                   <a href="https://www.instagram.com/rosemrstla/" clss="nav-link p-0 text-muted" target="blank_"><i class="fa-brands fa-square-instagram fa-2xl" style="color: #000000;"></i></a>
+                 </li>
+     
+                 <li class="nav-item mb-2">
+                   <a href="https://twitter.com/Itsurgirlshaxxx" clss="nav-link p-0 text-muted" target="blank_"><i class="fa-brands fa-twitter fa-2xl" style="color: #000000;"></i></a>
+                 </li>
+               </ul>
+             </div>
+             <!--contact form-->
+             <div class="col-md-6 offset-md-1 mb-3 form">
+               <h1>Your Feedback</h1>
+               <form class="form-contact">
+                 <div class="form-floating mb-3">
+                   <input type="email" class="eml form-control inpt" id="floatingInput" placeholder="name@example.com">
+                   <label for="floatingInput">Email address</label>
+                 </div>
+     
+                 <div class="form-floating mb-3">
+                   <input type="text" class="user form-control inpt" id="floatingInput" placeholder="name@example.com">
+                   <label for="floatingInput">Username</label>
+                 </div>
+     
+                 <div class="form-floating mb-3">
+                   <textarea class="cm form-control inpt" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                   <label for="floatingTextarea2">Comments</label>
+                 </div>
+     
+                 <div class="d-grid gap-2">
+                   <button class="btn btn-primary btn-contact" type="button" onclick="emailSend()">Submit</button>
+                 </div>
+               </form>
+             </div>
+           </div>
+           <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top bdr">
+             <p>© 2023 KumatechDevelopers | Designed and Developed by John Carlo Idao💕</p>
+           </div>
+         </footer>
+       </div>
+   </body>
+   <script src="app.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+   <script>
+     AOS.init();
+   </script>
+</html>
